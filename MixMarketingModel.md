@@ -8,141 +8,14 @@ Install and load packages neccesary for analysis
 
 ``` r
 library(dplyr)
-```
-
-    ## Warning: package 'dplyr' was built under R version 3.5.2
-
-    ## 
-    ## Attaching package: 'dplyr'
-
-    ## The following objects are masked from 'package:stats':
-    ## 
-    ##     filter, lag
-
-    ## The following objects are masked from 'package:base':
-    ## 
-    ##     intersect, setdiff, setequal, union
-
-``` r
 library(plyr)
-```
-
-    ## -------------------------------------------------------------------------
-
-    ## You have loaded plyr after dplyr - this is likely to cause problems.
-    ## If you need functions from both plyr and dplyr, please load plyr first, then dplyr:
-    ## library(plyr); library(dplyr)
-
-    ## -------------------------------------------------------------------------
-
-    ## 
-    ## Attaching package: 'plyr'
-
-    ## The following objects are masked from 'package:dplyr':
-    ## 
-    ##     arrange, count, desc, failwith, id, mutate, rename, summarise,
-    ##     summarize
-
-``` r
 library(lubridate)
-```
-
-    ## 
-    ## Attaching package: 'lubridate'
-
-    ## The following object is masked from 'package:plyr':
-    ## 
-    ##     here
-
-    ## The following object is masked from 'package:base':
-    ## 
-    ##     date
-
-``` r
 library(MASS)
-```
-
-    ## 
-    ## Attaching package: 'MASS'
-
-    ## The following object is masked from 'package:dplyr':
-    ## 
-    ##     select
-
-``` r
 library(car)
-```
-
-    ## Warning: package 'car' was built under R version 3.5.2
-
-    ## Loading required package: carData
-
-    ## Warning: package 'carData' was built under R version 3.5.2
-
-    ## 
-    ## Attaching package: 'car'
-
-    ## The following object is masked from 'package:dplyr':
-    ## 
-    ##     recode
-
-``` r
 library(DataCombine)
-```
-
-    ## Warning: package 'DataCombine' was built under R version 3.5.2
-
-``` r
 library(zoo)
-```
-
-    ## Warning: package 'zoo' was built under R version 3.5.2
-
-    ## 
-    ## Attaching package: 'zoo'
-
-    ## The following objects are masked from 'package:base':
-    ## 
-    ##     as.Date, as.Date.numeric
-
-``` r
 library(glmnet)
-```
-
-    ## Warning: package 'glmnet' was built under R version 3.5.2
-
-    ## Loading required package: Matrix
-
-    ## Warning: package 'Matrix' was built under R version 3.5.2
-
-    ## Loading required package: foreach
-
-    ## Warning: package 'foreach' was built under R version 3.5.2
-
-    ## Loaded glmnet 2.0-16
-
-``` r
 library(DAAG)
-```
-
-    ## Loading required package: lattice
-
-    ## 
-    ## Attaching package: 'DAAG'
-
-    ## The following object is masked from 'package:car':
-    ## 
-    ##     vif
-
-    ## The following object is masked from 'package:MASS':
-    ## 
-    ##     hills
-
-    ## The following object is masked from 'package:plyr':
-    ## 
-    ##     ozone
-
-``` r
 library(ggplot2)
 ```
 
@@ -613,263 +486,9 @@ advanced_kpi <- function(dataset)
 }
 
 Game_final <- advanced_kpi(GamingAccessory)
-```
-
-    ## `mutate_each()` is deprecated.
-    ## Use `mutate_all()`, `mutate_at()` or `mutate_if()` instead.
-    ## To map `funs` over a selection of variables, use `mutate_at()`
-    ## `mutate_each()` is deprecated.
-    ## Use `mutate_all()`, `mutate_at()` or `mutate_if()` instead.
-    ## To map `funs` over a selection of variables, use `mutate_at()`
-    ## `mutate_each()` is deprecated.
-    ## Use `mutate_all()`, `mutate_at()` or `mutate_if()` instead.
-    ## To map `funs` over a selection of variables, use `mutate_at()`
-
-    ## 
-    ## Remember to put dataset in time order before running.
-
-    ## 
-    ## Lagging list_price by 1 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging list_price by 2 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging list_price by 3 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging promotional_offer by 1 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging promotional_offer by 2 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging promotional_offer by 3 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging NPS by 1 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging NPS by 2 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging NPS by 3 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging holiday_freq by 1 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging holiday_freq by 2 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging holiday_freq by 3 time units.
-
-``` r
 Home_final <- advanced_kpi(HomeAudio)
-```
-
-    ## `mutate_each()` is deprecated.
-    ## Use `mutate_all()`, `mutate_at()` or `mutate_if()` instead.
-    ## To map `funs` over a selection of variables, use `mutate_at()`
-
-    ## `mutate_each()` is deprecated.
-    ## Use `mutate_all()`, `mutate_at()` or `mutate_if()` instead.
-    ## To map `funs` over a selection of variables, use `mutate_at()`
-    ## `mutate_each()` is deprecated.
-    ## Use `mutate_all()`, `mutate_at()` or `mutate_if()` instead.
-    ## To map `funs` over a selection of variables, use `mutate_at()`
-
-    ## 
-    ## Remember to put dataset in time order before running.
-
-    ## 
-    ## Lagging list_price by 1 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging list_price by 2 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging list_price by 3 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging promotional_offer by 1 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging promotional_offer by 2 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging promotional_offer by 3 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging NPS by 1 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging NPS by 2 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging NPS by 3 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging holiday_freq by 1 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging holiday_freq by 2 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging holiday_freq by 3 time units.
-
-``` r
 Camera_final <- advanced_kpi(CameraAccessory)
 ```
-
-    ## `mutate_each()` is deprecated.
-    ## Use `mutate_all()`, `mutate_at()` or `mutate_if()` instead.
-    ## To map `funs` over a selection of variables, use `mutate_at()`
-
-    ## `mutate_each()` is deprecated.
-    ## Use `mutate_all()`, `mutate_at()` or `mutate_if()` instead.
-    ## To map `funs` over a selection of variables, use `mutate_at()`
-    ## `mutate_each()` is deprecated.
-    ## Use `mutate_all()`, `mutate_at()` or `mutate_if()` instead.
-    ## To map `funs` over a selection of variables, use `mutate_at()`
-
-    ## 
-    ## Remember to put dataset in time order before running.
-
-    ## 
-    ## Lagging list_price by 1 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging list_price by 2 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging list_price by 3 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging promotional_offer by 1 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging promotional_offer by 2 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging promotional_offer by 3 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging NPS by 1 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging NPS by 2 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging NPS by 3 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging holiday_freq by 1 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging holiday_freq by 2 time units.
-
-    ## 
-    ## Remember to put data_dum in time order before running.
-
-    ## 
-    ## Lagging holiday_freq by 3 time units.
 
 ### EDA function is created to plot the descriptive analysis results
 
@@ -905,20 +524,6 @@ EDA <- function(dataset,name){
 EDA(Game_final,"Gaming Accessory") 
 ```
 
-    ## Warning: Ignoring unknown aesthetics: method
-
-    ## Warning: Ignoring unknown aesthetics: method
-
-    ## Warning: Ignoring unknown aesthetics: method
-
-    ## Warning: Ignoring unknown aesthetics: method
-
-    ## Warning: Ignoring unknown aesthetics: method
-
-    ## Warning: Ignoring unknown aesthetics: method
-
-    ## Warning: Ignoring unknown aesthetics: method
-
 ![](MixMarketingModel_files/figure-markdown_github/unnamed-chunk-17-1.png)
 
 ``` r
@@ -927,40 +532,12 @@ EDA(Game_final,"Gaming Accessory")
 EDA(Camera_final,"Camera Accessory")
 ```
 
-    ## Warning: Ignoring unknown aesthetics: method
-
-    ## Warning: Ignoring unknown aesthetics: method
-
-    ## Warning: Ignoring unknown aesthetics: method
-
-    ## Warning: Ignoring unknown aesthetics: method
-
-    ## Warning: Ignoring unknown aesthetics: method
-
-    ## Warning: Ignoring unknown aesthetics: method
-
-    ## Warning: Ignoring unknown aesthetics: method
-
 ![](MixMarketingModel_files/figure-markdown_github/unnamed-chunk-18-1.png)
 
 ``` r
 # Home_final
 EDA(Home_final,"Home Audio")
 ```
-
-    ## Warning: Ignoring unknown aesthetics: method
-
-    ## Warning: Ignoring unknown aesthetics: method
-
-    ## Warning: Ignoring unknown aesthetics: method
-
-    ## Warning: Ignoring unknown aesthetics: method
-
-    ## Warning: Ignoring unknown aesthetics: method
-
-    ## Warning: Ignoring unknown aesthetics: method
-
-    ## Warning: Ignoring unknown aesthetics: method
 
 ![](MixMarketingModel_files/figure-markdown_github/unnamed-chunk-19-1.png) \# Model on Camera Accessory Dataset
 
@@ -1722,13 +1299,6 @@ temp_crossval <- cv.lm(data = Linear_model, form.lm = formula(gmv ~ SLA + Digita
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-    ## Warning in cv.lm(data = Linear_model, form.lm = formula(gmv ~ SLA + Digital + : 
-    ## 
-    ##  As there is >1 explanatory variable, cross-validation
-    ##  predicted values for a fold are not a linear function
-    ##  of corresponding overall predicted values.  Lines that
-    ##  are shown for the different folds are approximate
-
 ![](MixMarketingModel_files/figure-markdown_github/unnamed-chunk-34-1.png)
 
     ## 
@@ -2302,13 +1872,6 @@ temp_crossval <- cv.lm(data = Camera_multi, form.lm = formula(gmv ~ per_order + 
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-    ## Warning in cv.lm(data = Camera_multi, form.lm = formula(gmv ~ per_order + : 
-    ## 
-    ##  As there is >1 explanatory variable, cross-validation
-    ##  predicted values for a fold are not a linear function
-    ##  of corresponding overall predicted values.  Lines that
-    ##  are shown for the different folds are approximate
-
 ![](MixMarketingModel_files/figure-markdown_github/unnamed-chunk-45-1.png)
 
     ## 
@@ -2467,15 +2030,8 @@ Camera_koyck<- Camera_final[,-c(1:4,10:12,28:39)]
 
 # gmv 1 lag
 Camera_koyck <- slide(Camera_koyck, Var = "gmv",slideBy = -1)
-```
 
-    ## 
-    ## Remember to put Camera_koyck in time order before running.
 
-    ## 
-    ## Lagging gmv by 1 time units.
-
-``` r
 Camera_koyck <- na.omit(Camera_koyck)
 
 Camera_koyck <- scale(Camera_koyck)
@@ -3304,13 +2860,6 @@ temp_crossval <- cv.lm(data = Camera_koyck, form.lm = formula(gmv ~ Digital + Sp
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-    ## Warning in cv.lm(data = Camera_koyck, form.lm = formula(gmv ~ Digital + : 
-    ## 
-    ##  As there is >1 explanatory variable, cross-validation
-    ##  predicted values for a fold are not a linear function
-    ##  of corresponding overall predicted values.  Lines that
-    ##  are shown for the different folds are approximate
-
 ![](MixMarketingModel_files/figure-markdown_github/unnamed-chunk-60-1.png)
 
     ## 
@@ -3468,35 +3017,11 @@ ggplot(data=elasticity.outputs, aes(x=reorder(Variable,Elasticity),y=Elasticity)
 Dis_Model <- Camera_final[,-c(1:4,10:12, 28:30)]
 
 Dis_model_1 <- slide(Dis_Model, Var = "gmv",slideBy = -1)
-```
 
-    ## 
-    ## Remember to put Dis_Model in time order before running.
-
-    ## 
-    ## Lagging gmv by 1 time units.
-
-``` r
 Dis_model_1 <- slide(Dis_model_1, Var = "gmv",slideBy = -2)
-```
 
-    ## 
-    ## Remember to put Dis_model_1 in time order before running.
-
-    ## 
-    ## Lagging gmv by 2 time units.
-
-``` r
 Dis_model_1 <- slide(Dis_model_1, Var = "gmv",slideBy = -3)
-```
 
-    ## 
-    ## Remember to put Dis_model_1 in time order before running.
-
-    ## 
-    ## Lagging gmv by 3 time units.
-
-``` r
 Dis_model <- na.omit(Dis_model_1)
 
 Dis_model <- scale(Dis_model)
@@ -5045,13 +4570,6 @@ temp_crossval <- cv.lm(data = Dis_model, form.lm = formula(gmv ~ Sponsorship + p
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-    ## Warning in cv.lm(data = Dis_model, form.lm = formula(gmv ~ Sponsorship + : 
-    ## 
-    ##  As there is >1 explanatory variable, cross-validation
-    ##  predicted values for a fold are not a linear function
-    ##  of corresponding overall predicted values.  Lines that
-    ##  are shown for the different folds are approximate
-
 ![](MixMarketingModel_files/figure-markdown_github/unnamed-chunk-81-1.png)
 
     ## 
@@ -5210,35 +4728,11 @@ Multi_dist <- Camera_final[-c(1:4,10:13,22:30,37:39)] # Not considered moving av
 # gmv
 
 Multi_Dis_model_1 <- slide(Multi_dist, Var = "gmv",slideBy = -1)
-```
 
-    ## 
-    ## Remember to put Multi_dist in time order before running.
-
-    ## 
-    ## Lagging gmv by 1 time units.
-
-``` r
 Multi_Dis_model_1 <- slide(Multi_Dis_model_1, Var = "gmv",slideBy = -2)
-```
 
-    ## 
-    ## Remember to put Multi_Dis_model_1 in time order before running.
-
-    ## 
-    ## Lagging gmv by 2 time units.
-
-``` r
 Multi_Dis_model_1 <- slide(Multi_Dis_model_1, Var = "gmv",slideBy = -3)
-```
 
-    ## 
-    ## Remember to put Multi_Dis_model_1 in time order before running.
-
-    ## 
-    ## Lagging gmv by 3 time units.
-
-``` r
 Multi_dist <- na.omit(Multi_Dis_model_1)
 
 colnames(Multi_dist)[14:22]<- c("promotional_offer_1","promotional_offer_2","promotional_offer_3","NPS_1",
@@ -5969,13 +5463,6 @@ temp_crossval <- cv.lm(data = Multi_dist, form.lm = formula(gmv ~ promotional_of
     ## Residuals         42   20.0     0.5                    
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-
-    ## Warning in cv.lm(data = Multi_dist, form.lm = formula(gmv ~ promotional_offer + : 
-    ## 
-    ##  As there is >1 explanatory variable, cross-validation
-    ##  predicted values for a fold are not a linear function
-    ##  of corresponding overall predicted values.  Lines that
-    ##  are shown for the different folds are approximate
 
 ![](MixMarketingModel_files/figure-markdown_github/unnamed-chunk-89-1.png)
 
@@ -6871,13 +6358,6 @@ temp_crossval <- cv.lm(data = Linear_model, form.lm = formula(gmv ~ NPS + SEM + 
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-    ## Warning in cv.lm(data = Linear_model, form.lm = formula(gmv ~ NPS + SEM + : 
-    ## 
-    ##  As there is >1 explanatory variable, cross-validation
-    ##  predicted values for a fold are not a linear function
-    ##  of corresponding overall predicted values.  Lines that
-    ##  are shown for the different folds are approximate
-
 ![](MixMarketingModel_files/figure-markdown_github/unnamed-chunk-104-1.png)
 
     ## 
@@ -7477,13 +6957,6 @@ temp_crossval <- cv.lm(data = Game_multi, form.lm = formula(gmv ~ per_order + Af
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-    ## Warning in cv.lm(data = Game_multi, form.lm = formula(gmv ~ per_order + : 
-    ## 
-    ##  As there is >1 explanatory variable, cross-validation
-    ##  predicted values for a fold are not a linear function
-    ##  of corresponding overall predicted values.  Lines that
-    ##  are shown for the different folds are approximate
-
 ![](MixMarketingModel_files/figure-markdown_github/unnamed-chunk-115-1.png)
 
     ## 
@@ -7653,15 +7126,8 @@ Game_koyck<- Game_final[,-c(1:4,10:12,28:39)]
 
 # gmv 1 lag
 Game_koyck <- slide(Game_koyck, Var = "gmv",slideBy = -1)
-```
 
-    ## 
-    ## Remember to put Game_koyck in time order before running.
 
-    ## 
-    ## Lagging gmv by 1 time units.
-
-``` r
 Game_koyck <- na.omit(Game_koyck)
 
 Game_koyck <- scale(Game_koyck)
@@ -8438,13 +7904,6 @@ temp_crossval <- cv.lm(data = Game_koyck, form.lm = formula(gmv ~ NPS + inc_LP_M
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-    ## Warning in cv.lm(data = Game_koyck, form.lm = formula(gmv ~ NPS + inc_LP_MA3 + : 
-    ## 
-    ##  As there is >1 explanatory variable, cross-validation
-    ##  predicted values for a fold are not a linear function
-    ##  of corresponding overall predicted values.  Lines that
-    ##  are shown for the different folds are approximate
-
 ![](MixMarketingModel_files/figure-markdown_github/unnamed-chunk-133-1.png)
 
     ## 
@@ -8609,35 +8068,11 @@ ggplot(data=elasticity.outputs, aes(x=reorder(Variable,Elasticity),y=Elasticity)
 Dis_Model <- Game_final[,-c(1:4,10:12, 28:30)]
 
 Dis_model_1 <- slide(Dis_Model, Var = "gmv",slideBy = -1)
-```
 
-    ## 
-    ## Remember to put Dis_Model in time order before running.
-
-    ## 
-    ## Lagging gmv by 1 time units.
-
-``` r
 Dis_model_1 <- slide(Dis_model_1, Var = "gmv",slideBy = -2)
-```
 
-    ## 
-    ## Remember to put Dis_model_1 in time order before running.
-
-    ## 
-    ## Lagging gmv by 2 time units.
-
-``` r
 Dis_model_1 <- slide(Dis_model_1, Var = "gmv",slideBy = -3)
-```
 
-    ## 
-    ## Remember to put Dis_model_1 in time order before running.
-
-    ## 
-    ## Lagging gmv by 3 time units.
-
-``` r
 Dis_model <- na.omit(Dis_model_1)
 
 Dis_model <- scale(Dis_model)
@@ -10139,13 +9574,6 @@ temp_crossval <- cv.lm(data = Dis_model, form.lm = formula(gmv ~ holiday_freq + 
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-    ## Warning in cv.lm(data = Dis_model, form.lm = formula(gmv ~ holiday_freq + : 
-    ## 
-    ##  As there is >1 explanatory variable, cross-validation
-    ##  predicted values for a fold are not a linear function
-    ##  of corresponding overall predicted values.  Lines that
-    ##  are shown for the different folds are approximate
-
 ![](MixMarketingModel_files/figure-markdown_github/unnamed-chunk-155-1.png)
 
     ## 
@@ -10312,35 +9740,11 @@ Multi_dist <- Game_final[-c(1:4,10:13,22:30,37:39)] # Not considered moving aver
 # gmv
 
 Multi_Dis_model_1 <- slide(Multi_dist, Var = "gmv",slideBy = -1)
-```
 
-    ## 
-    ## Remember to put Multi_dist in time order before running.
-
-    ## 
-    ## Lagging gmv by 1 time units.
-
-``` r
 Multi_Dis_model_1 <- slide(Multi_Dis_model_1, Var = "gmv",slideBy = -2)
-```
 
-    ## 
-    ## Remember to put Multi_Dis_model_1 in time order before running.
-
-    ## 
-    ## Lagging gmv by 2 time units.
-
-``` r
 Multi_Dis_model_1 <- slide(Multi_Dis_model_1, Var = "gmv",slideBy = -3)
-```
 
-    ## 
-    ## Remember to put Multi_Dis_model_1 in time order before running.
-
-    ## 
-    ## Lagging gmv by 3 time units.
-
-``` r
 Multi_dist <- na.omit(Multi_Dis_model_1)
 
 
@@ -11183,13 +10587,6 @@ temp_crossval <- cv.lm(data = Multi_dist, form.lm = formula(gmv ~ Digital + Spon
     ## Residuals           41   32.2     0.8                    
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-
-    ## Warning in cv.lm(data = Multi_dist, form.lm = formula(gmv ~ Digital + Sponsorship + : 
-    ## 
-    ##  As there is >1 explanatory variable, cross-validation
-    ##  predicted values for a fold are not a linear function
-    ##  of corresponding overall predicted values.  Lines that
-    ##  are shown for the different folds are approximate
 
 ![](MixMarketingModel_files/figure-markdown_github/unnamed-chunk-170-1.png)
 
@@ -12103,13 +11500,6 @@ temp_crossval <- cv.lm(data = Linear_model, form.lm = formula(gmv ~ holiday_freq
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-    ## Warning in cv.lm(data = Linear_model, form.lm = formula(gmv ~ holiday_freq + : 
-    ## 
-    ##  As there is >1 explanatory variable, cross-validation
-    ##  predicted values for a fold are not a linear function
-    ##  of corresponding overall predicted values.  Lines that
-    ##  are shown for the different folds are approximate
-
 ![](MixMarketingModel_files/figure-markdown_github/unnamed-chunk-185-1.png)
 
     ## 
@@ -12664,13 +12054,6 @@ temp_crossval <- cv.lm(data = Home_multi, form.lm = formula(gmv ~ promotional_of
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-    ## Warning in cv.lm(data = Home_multi, form.lm = formula(gmv ~ promotional_offer + : 
-    ## 
-    ##  As there is >1 explanatory variable, cross-validation
-    ##  predicted values for a fold are not a linear function
-    ##  of corresponding overall predicted values.  Lines that
-    ##  are shown for the different folds are approximate
-
 ![](MixMarketingModel_files/figure-markdown_github/unnamed-chunk-191-1.png)
 
     ## 
@@ -12832,15 +12215,8 @@ Home_koyck<- Home_final[,-c(1:4,10:12,28:39)]
 
 # gmv 1 lag
 Home_koyck <- slide(Home_koyck, Var = "gmv",slideBy = -1)
-```
 
-    ## 
-    ## Remember to put Home_koyck in time order before running.
 
-    ## 
-    ## Lagging gmv by 1 time units.
-
-``` r
 Home_koyck <- na.omit(Home_koyck)
 
 Home_koyck <- scale(Home_koyck)
@@ -13622,13 +12998,6 @@ temp_crossval <- cv.lm(data = Home_koyck, form.lm = formula(gmv ~ Digital + inc_
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-    ## Warning in cv.lm(data = Home_koyck, form.lm = formula(gmv ~ Digital + inc_PO_MA3), : 
-    ## 
-    ##  As there is >1 explanatory variable, cross-validation
-    ##  predicted values for a fold are not a linear function
-    ##  of corresponding overall predicted values.  Lines that
-    ##  are shown for the different folds are approximate
-
 ![](MixMarketingModel_files/figure-markdown_github/unnamed-chunk-202-1.png)
 
     ## 
@@ -13788,35 +13157,11 @@ ggplot(data=elasticity.outputs, aes(x=reorder(Variable,Elasticity),y=Elasticity)
 Dis_Model <- Home_final[,-c(1:4,10:12, 28:30)]
 
 Dis_model_1 <- slide(Dis_Model, Var = "gmv",slideBy = -1)
-```
 
-    ## 
-    ## Remember to put Dis_Model in time order before running.
-
-    ## 
-    ## Lagging gmv by 1 time units.
-
-``` r
 Dis_model_1 <- slide(Dis_model_1, Var = "gmv",slideBy = -2)
-```
 
-    ## 
-    ## Remember to put Dis_model_1 in time order before running.
-
-    ## 
-    ## Lagging gmv by 2 time units.
-
-``` r
 Dis_model_1 <- slide(Dis_model_1, Var = "gmv",slideBy = -3)
-```
 
-    ## 
-    ## Remember to put Dis_model_1 in time order before running.
-
-    ## 
-    ## Lagging gmv by 3 time units.
-
-``` r
 Dis_model <- na.omit(Dis_model_1)
 
 Dis_model <- scale(Dis_model)
@@ -15481,13 +14826,6 @@ temp_crossval <- cv.lm(data = Dis_model, form.lm = formula(gmv ~ promotional_off
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-    ## Warning in cv.lm(data = Dis_model, form.lm = formula(gmv ~ promotional_offer + : 
-    ## 
-    ##  As there is >1 explanatory variable, cross-validation
-    ##  predicted values for a fold are not a linear function
-    ##  of corresponding overall predicted values.  Lines that
-    ##  are shown for the different folds are approximate
-
 ![](MixMarketingModel_files/figure-markdown_github/unnamed-chunk-229-1.png)
 
     ## 
@@ -15648,35 +14986,11 @@ Multi_dist <- Home_final[-c(1:4,10:13,22:30,37:39)] # Not considered moving aver
 # gmv
 
 Multi_Dis_model_1 <- slide(Multi_dist, Var = "gmv",slideBy = -1)
-```
 
-    ## 
-    ## Remember to put Multi_dist in time order before running.
-
-    ## 
-    ## Lagging gmv by 1 time units.
-
-``` r
 Multi_Dis_model_1 <- slide(Multi_Dis_model_1, Var = "gmv",slideBy = -2)
-```
 
-    ## 
-    ## Remember to put Multi_Dis_model_1 in time order before running.
-
-    ## 
-    ## Lagging gmv by 2 time units.
-
-``` r
 Multi_Dis_model_1 <- slide(Multi_Dis_model_1, Var = "gmv",slideBy = -3)
-```
 
-    ## 
-    ## Remember to put Multi_Dis_model_1 in time order before running.
-
-    ## 
-    ## Lagging gmv by 3 time units.
-
-``` r
 Multi_dist <- na.omit(Multi_Dis_model_1)
 
 
@@ -16494,13 +15808,6 @@ temp_crossval <- cv.lm(data = Multi_dist, form.lm = formula(gmv ~ promotional_of
     ## Residuals         42   7.41   0.176                  
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-
-    ## Warning in cv.lm(data = Multi_dist, form.lm = formula(gmv ~ promotional_offer + : 
-    ## 
-    ##  As there is >1 explanatory variable, cross-validation
-    ##  predicted values for a fold are not a linear function
-    ##  of corresponding overall predicted values.  Lines that
-    ##  are shown for the different folds are approximate
 
 ![](MixMarketingModel_files/figure-markdown_github/unnamed-chunk-240-1.png)
 
