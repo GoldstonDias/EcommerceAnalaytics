@@ -1,7 +1,7 @@
 # MarketMixModellingForEcommerce
 Market Mix Modelling for eCommerce: 
-Presentation : https://github.com/GoldstonDias/MarketMixModellingForEcommerce/blob/master/ElecKart_MMM.pdf
-Link : https://github.com/GoldstonDias/MarketMixModellingForEcommerce/blob/master/MixMarketingModel.md 
+###Presentation : https://github.com/GoldstonDias/MarketMixModellingForEcommerce/blob/master/ElecKart_MMM.pdf
+###Link : https://github.com/GoldstonDias/MarketMixModellingForEcommerce/blob/master/MixMarketingModel.md 
 Identified the most impactful channel for marketing spends and other factors having positive impacts on sales of 3 product categories: 
 a) camera accessory
 b) Game accessory
